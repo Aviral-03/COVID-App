@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Raksha Sutra</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_resource">Resource</string>
+    <string name="menu_hostpots">Hotspots</string>
+    <string name="menu_news">News</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_hotspot_">Hotspot_Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_hotspot">Map</string>
+    <string name="title_activity_trial_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_home_map">Map</string>
+    <string name="title_activity_iyyfiify">Map</string>
+    <string name="title_activity_testmaps">Map</string>
+
+    <!---FAQ -->
+    <string name="text1">slkfjsldfkjsldfj \n\nStart New Activity on Button Click. public class MainActivity extends AppCompatActivity Start New Activity on Button Click. public class MainActivity extends AppCompatActivity Start New Activity on Button Click. public class MainActivity extends AppCompatActivity  </string>
+    <string name="text2">slkfjsldfkjsldfj \n\nStart New Activity on Button Click. public class MainActivity extends AppCompatActivity Start New Activity on Button Click. public class MainActivity extends AppCompatActivity Start New Activity on Button Click. public class MainActivity extends AppCompatActivity  </string>
+    <string name="not_yet_to_date_there_is_no_vaccine_and_no_specific_antiviral_medicine_to_prevent_or_treat_covid_2019_however_those_affected_should_receive_care_to_relieve_symptoms_people_with_serious_illness_should_be_hospitalized_most_patients_recover_thanks_to_supportive_care_possible_vaccines_and_some_specific_drug_treatments_are_under_investigation_they_are_being_tested_through_clinical_trials_the_most_effective_ways_to_protect_yourself_and_others_against_covid_19_are_to_frequently_clean_your_hands_cover_your_cough_with_the_bend_of_elbow_or_tissue_and_maintain_a_distance_of_at_least_1_meter_3_feet_from_people_who_are_coughing_or_sneezing">Not yet. To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019. However, those affected should receive care to relieve symptoms. People with serious illness should be hospitalized. Most patients recover thanks to supportive care. Possible vaccines and some specific drug treatments are under investigation. They are being tested through clinical trials. The most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow or tissue, and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing</string>
+
+</resources>

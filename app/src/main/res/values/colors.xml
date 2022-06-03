@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    //color bottom
+    <color name="colorbottom">#FFFF</color>
+    
+    //color news
+    <color name="colorTotalConfirmed">#e60000</color>
+    <color name="colorTotalRecovered">#7bb974</color>
+    <color name="colorTotalActive">#fe6e00</color>
+
+    //RecyclerView Contact
+    <color name="RecyclercolorPrimary">#393939</color>
+    <color name="RecyclercolorPrimaryDark">#2f2f2f</color>
+    <color name="RecyclercolorAccent">#53b7f8</color>
+    <color name="backgroundFragment">#2b2b2b</color>
+
+    //Permisssion Activity
+    <color name="colorPrimaryMaps">#35b64f</color>
+    <color name="colorPrimaryDarkMaps">#289b35</color>
+    <color name="colorAccentMaps">#FF4081</color>
+
+    //Resources
+    <color name="breaker">#F2F2F2</color>
+
+
+    //Maps
+    <color name="hotspotorannge">#ffa500</color>
+
+    //Status bar
+    <color name="statusbar">#1734a7</color>
+    
+    //Intro Screen
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+</resources>

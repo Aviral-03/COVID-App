@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+    android:background="@color/white"
+    tools:context=".faq_covid">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="-80dp"
+                android:layout_marginRight="-80dp"
+                android:layout_marginTop="-50dp"
+                android:layout_height="280dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gradient"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="FAQ's"
+                    android:textColor="@color/white"
+                    android:textSize="55sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:text="Frequently Asked Questions"
+                android:textColor="@color/quantum_black_100"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+
+
+            <Button
+                android:id="@+id/expandableButton1"
+                android:fontFamily="@font/roboto"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_width="450dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left|center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-10dp"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton1"
+                android:elevation="0dp"
+                android:text="What is Corona virus?"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton1"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="190dp"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/quantum_black_100"
+                    android:fontFamily="@font/roboto_light"
+                    android:textSize="14sp"
+                    android:text="Corona viruses are a large family of viruses which may cause illness
+in animals or humans. In humans, several coronaviruses are known
+to cause respiratory infections ranging from the common cold to more
+severe diseases such as Middle East Respiratory Syndrome (MERS)
+and Severe Acute Respiratory Syndrome (SARS). The most recently
+discovered coronavirus causes coronavirus disease COVID-19. " />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:id="@+id/expandableButton2"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_below="@+id/expandableLayout1"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton2"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:layout_marginStart="-10dp"
+                android:text="How does COVID-19 spread?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton2"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="left|center_vertical"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="14sp"
+                    android:text="People can catch COVID-19 from others who have the virus. The
+disease can spread from person to person through small droplets from
+the nose or mouth which are spread when a person with COVID-19
+coughs or exhales. These droplets land on objects and surfaces
+around the person. Other people then catch COVID-19 by touching
+these objects or surfaces, then touching their eyes, nose or mouth.
+People can also catch COVID-19 if they breathe in droplets from a
+person with COVID-19 who coughs out or exhales droplets. This is
+why it is important to stay more than 1 meter (3 feet) away from a
+person who is sick." />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:id="@+id/expandableButton3"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_width="450dp"
+                android:gravity="left|center_vertical"
+                android:layout_marginStart="-10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableLayout2"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton3"
+                android:paddingStart="40dp"
+                android:text="How likely am I to catch COVID-19?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton3"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="345dp"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="14sp"
+                    android:text="The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak unfolding there.
+For most people in most locations the risk of catching COVID-19 is  still low. However, there are now places around the world (cities or areas) where the disease is spreading. For people living in, or visiting, these areas the risk of catching COVID-19 is higher.
+Governments and health authorities are taking vigorous action every time a new case of COVID-19 is identified.
+Be sure to comply with any local restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce your risk of catching or spreading COVID-19.
+COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other countries. Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware of the situation where you are or intend to go.
+" />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:id="@+id/expandableButton4"
+                android:textAllCaps="false"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_marginStart="-10dp"
+                android:layout_below="@+id/expandableLayout3"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton4"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:text="Who is at risk of developing severe illness?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton4"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="140dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/quantum_black_100"
+                    android:text="While we are still learning about how COVID-2019 affects people, older persons and persons with pre-existing medical conditions (such as high blood pressure, heart disease, lung disease, cancer or diabetes) appear to develop serious illness more often than others." />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:id="@+id/expandableButton5"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_below="@+id/expandableLayout4"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton5"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:layout_marginStart="-10dp"
+                android:text="Are antibiotics effective in preventing or treating the COVID-19?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton5"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="left|center_vertical"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="14sp"
+                    android:text="No. Antibiotics do not work against viruses, they only work on  bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19. They should only be used as directed by a physician to treat a bacterial infection." />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+            <Button
+                android:id="@+id/expandableButton6"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_below="@+id/expandableLayout5"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton6"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:layout_marginStart="-10dp"
+                android:text="Are there any medicines or therapies that can \nprevent or cure COVID-19?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton6"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="220dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="left|center_vertical"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="14sp"
+                    android:text="While some western, traditional or home remedies may provide comfort and alleviate symptoms of COVID-19, there is no evidence that current medicine can prevent or cure the disease. We does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. However, there are several ongoing clinical trials that include both western and traditional medicines. We will continue to provide updated information as soon  as clinical findings are available." />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+            <Button
+                android:id="@+id/expandableButton7"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_below="@+id/expandableLayout6"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton7"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:layout_marginStart="-10dp"
+                android:text="Is there a vaccine drug or treatment for COVID-19?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton7"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="265dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="left|center_vertical"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="14sp"
+                    android:text="Not yet. To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019. However, those affected should receive care to relieve symptoms. People with serious illness should be hospitalized. Most patients recover thanks to supportive care.
+
+Possible vaccines and some specific drug treatments are under investigation. They are being tested through clinical trials.
+
+The most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow or tissue, and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing
+" />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+            <Button
+                android:id="@+id/expandableButton8"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_below="@+id/expandableLayout7"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton8"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:layout_marginStart="-10dp"
+                android:text="Is COVID-19 the same as SARS?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton8"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="165dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="left|center_vertical"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="14sp"
+                    android:text="No. The virus that causes COVID-19 and the one that caused the outbreak of Severe Acute Respiratory Syndrome (SARS) in 2003 are related to each other genetically, but the diseases they cause are  quite different.
+
+SARS was more deadly but much less infectious than COVID-19. There have been no outbreaks of SARS anywhere in the world since 2003.
+" />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+            <Button
+                android:id="@+id/expandableButton9"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_below="@+id/expandableLayout8"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton9"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:layout_marginStart="-10dp"
+                android:text="How long is the incubation period for COVID-19?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton9"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="left|center_vertical"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="14sp"
+                    android:text="The “incubation period” means the time between catching the virus and beginning to have symptoms of the disease. Most estimates  of the incubation period for COVID-19 range from 1-14 days, most commonly around five days. These estimates will be updated as more data become available." />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+            <Button
+                android:id="@+id/expandableButton10"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_below="@+id/expandableLayout9"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton10"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:layout_marginStart="-10dp"
+                android:text="Can humans become infected with the COVID-19 \nfrom an animal source?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton10"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="265dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="left|center_vertical"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="14sp"
+                    android:text="Coronaviruses are a large family of viruses that are common in animals. Occasionally, people get infected with these viruses which
+
+may then spread to other people. For example, SARS-CoV was associated with civet cats and MERS-CoV is transmitted by  dromedary camels. Possible animal sources of COVID-19 have not  yet been confirmed.
+
+To protect yourself, such as when visiting live animal markets, avoid direct contact with animals and surfaces in contact with animals. Ensure good food safety practices at all times. Handle raw meat, milk or animal organs with care to avoid contamination of uncooked foods and avoid consuming raw or undercooked animal products.
+" />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+            <Button
+                android:id="@+id/expandableButton11"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_below="@+id/expandableLayout10"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton11"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:layout_marginStart="-10dp"
+                android:text="Can I catch COVID-19 from my pet?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton11"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="left|center_vertical"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="14sp"
+                    android:text="While there has been one instance of a dog being infected in Hong Kong, to date, there is no evidence that a dog, cat or any pet can transmit COVID-19.
+COVID-19 is mainly spread through droplets produced when an infected person coughs, sneezes, or speaks. To protect yourself, clean your hands frequently and thoroughly.
+
+We continues to monitor the latest research on this and other COVID- 19 topics and will update as new findings are available.
+" />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+            <Button
+                android:id="@+id/expandableButton12"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textStyle="bold"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_below="@+id/expandableLayout11"
+                android:background="@drawable/button_expandable"
+                android:onClick="expandableButton12"
+                android:paddingStart="40dp"
+                android:textSize="15sp"
+                android:layout_marginStart="-10dp"
+                android:text="How long does the virus survive on surfaces?"
+                android:textColor="@color/quantum_black_100" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton12"
+                android:background="@color/white"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                android:layout_marginBottom="40dp"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="265dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="left|center_vertical"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="14sp"
+                    android:text="It is not certain how long the virus that causes COVID-19 survives on surfaces, but it seems to behave like other corona viruses.
+
+Studies suggest that corona viruses (including preliminary information on the COVID-19 virus) may persist on surfaces for a few hours or up to several days. This may vary under different conditions (e.g. type of surface, temperature or humidity of the environment).
+
+If you think a surface may be infected, clean it with simple disinfectant to kill the virus and protect yourself and others. Clean your hands with
+
+an alcohol-based hand rub or wash them with soap and water. Avoid touching your eyes, mouth, or nose.
+" />
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

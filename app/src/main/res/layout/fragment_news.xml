@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".NewsFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginRight="-80dp"
+        android:layout_marginTop="-50dp"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gradient"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="-200dp"
+            android:src="@drawable/news"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:layout_marginStart="290dp"
+            android:gravity="center_vertical"
+            android:text="News"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/update_news"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="India"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textStyle=""
+            android:fontFamily="@font/roboto"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Case Updates"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="23sp"/>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/update_case"
+        android:elevation="5dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/redcircle"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/orangecircle"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="125dp"
+            android:src="@drawable/greencircle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalCountconfirm"
+            style="@style/TotalFontStyle"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:textSize="40sp"
+            android:text="219519"
+            android:textColor="@color/colorTotalConfirmed" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginStart="220dp"
+            android:id="@+id/totalconfirm"
+            style="@style/LabelFontStyle"
+            android:text="Cases"
+            android:textSize="15sp"
+            android:layout_marginTop="37dp"
+            android:textColor="@color/colorTotalConfirmed" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalCountactive"
+            style="@style/TotalFontStyle"
+            android:textSize="40sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="80dp"
+            android:text="124863"
+            android:textColor="@color/colorTotalActive" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalactive"
+            style="@style/LabelFontStyle"
+            android:text="Active"
+            android:textSize="15sp"
+            android:layout_marginTop="86dp"
+            android:layout_marginStart="220dp"
+            android:textColor="@color/colorTotalActive"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalCountrecover"
+            style="@style/TotalFontStyle"
+            android:textSize="40sp"
+            android:layout_marginTop="110dp"
+            android:text="125768"
+            android:layout_marginStart="80dp"
+            android:textColor="@color/colorTotalRecovered" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalrecover"
+            style="@style/LabelFontStyle"
+            android:text="Recovered"
+            android:textSize="15sp"
+            android:layout_marginTop="137dp"
+            android:layout_marginStart="220dp"
+            android:textColor="@color/colorTotalRecovered"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/breaker"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="Usefull resources"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="23sp"/>
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="90dp"
+                android:elevation="0dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/resource1">
+                <ImageView
+                    android:layout_width="165dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/about_faq"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto"
+                    android:text="FAQ regrading\nRaksha Sutra"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/quantum_black_text"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/faq_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="See all FAQ"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="90dp"
+                    android:textStyle="bold"
+                    android:textColor="#4286f4"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="88dp"
+                    android:src="@drawable/arrow"
+                    android:textColor="#4286f4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginBottom="60dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/resource2">
+                <ImageView
+                    android:layout_width="165dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/faq_covid"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto"
+                    android:text="Everything you need to \nknow about COVID-19"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/quantum_black_text"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/faq_covid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="See all FAQ"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="90dp"
+                    android:textStyle="bold"
+                    android:textColor="#4286f4"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="88dp"
+                    android:src="@drawable/arrow"
+                    android:textColor="#4286f4" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+    </RelativeLayout>
+

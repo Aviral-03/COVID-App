@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowLayoutInDisplayCutoutMode">
+            shortEdges
+        </item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- News-->
+    <style name="LabelFontStyle">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TotalFontStyle">
+        <item name="fontFamily">@font/roboto_condensed_bold</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <!--- News Read -->
+    <color name="colorPrimaryNews">#ea474a</color>
+    <color name="colorPrimaryDarkNews">#cf2a2d</color>
+    <color name="colorAccent">#1e344b</color>
+
+    <color name="colorBackgroundNews">#f9f9fa</color>
+    <color name="colorTextSubtitleNews">#4e4e4e</color>
+    <color name="colorTextTitleNews">#262626</color>
+
+</resources>

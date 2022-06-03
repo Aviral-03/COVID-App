@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "728526514619",
+    "firebase_url": "https://testaidproject.firebaseio.com",
+    "project_id": "testaidproject",
+    "storage_bucket": "testaidproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728526514619:android:240e5f4a9adccf118b7c9e",
+        "android_client_info": {
+          "package_name": "com.ab.rakshasutra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728526514619-bv9v6feo00jfnisjc1s71dn6ii5lup8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDONKu-U2MZagbxIVqbjwOwZCfokI1jKH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728526514619-bv9v6feo00jfnisjc1s71dn6ii5lup8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

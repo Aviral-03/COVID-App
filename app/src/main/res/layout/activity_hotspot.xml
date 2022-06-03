@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFF00"
+    tools:context=".HotspotActivity"
+    android:fitsSystemWindows="false">
+
+    <include layout="@layout/fragment_hotspot"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:itemIconTint="@color/nav_color"
+        android:elevation="30dp"
+        app:itemTextColor="@color/nav_color"
+        android:background="@drawable/rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottom" />
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:elevation="10dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:id="@+id/input_search"
+            android:queryBackground="@null"
+            android:background="@drawable/searchbar_round"
+            android:queryHint="Search Here" />
+
+    <Button
+        android:id="@+id/hospitals"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:text="Hospital"
+        android:drawableLeft="@drawable/ic_local_hospital_black_24dp"
+        android:paddingStart="10dp"
+        android:drawablePadding="-10dp"
+        android:onClick="onZoom"
+        android:background="@drawable/button_round"/>
+
+    <ImageButton
+        android:id="@+id/call"
+        android:layout_width="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:text="Hospital"
+        android:onClick="onZoom"
+        android:background="@drawable/round_white_call"
+        android:src="@drawable/ic_call"/>
+</RelativeLayout>
